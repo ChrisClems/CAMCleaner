@@ -1,5 +1,6 @@
 ﻿// (C) Copyright 2024 by  
 //
+
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
@@ -17,7 +18,6 @@ namespace CAMCleaner
     // then you should remove this class.
     public class MyPlugin : IExtensionApplication
     {
-
         void IExtensionApplication.Initialize()
         {
             // Add one time initialization here
@@ -44,7 +44,5 @@ namespace CAMCleaner
         {
             // Do plug-in application clean up here
         }
-
     }
-
 }
