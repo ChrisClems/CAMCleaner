@@ -55,7 +55,7 @@ namespace CAMCleaner
                 
                 PromptSelectionOptions opts = new PromptSelectionOptions
                 {
-                    MessageForAdding = "\nSelect polylines: ",
+                    MessageForAdding = "\nSelect lightweight polylines: ",
                     AllowDuplicates = false
                 };
                 
@@ -63,7 +63,8 @@ namespace CAMCleaner
 
                 if (acSSPrompt.Status != PromptStatus.OK)
                 {
-                    ed.WriteMessage("\nNo objects selected ");
+                    ed.WriteMessage("\nNo objects selected");
+                    ed.WriteMessage("\n2D and 3D polylines must be converted to lw polylines before flattening");
                     return;
                 }
                 
